@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PiBinaryRepresentation",
+            "request": "launch",
+            "mainClass": "PiBinaryRepresentation",
+            "projectName": "JAVA_9b31f867"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
