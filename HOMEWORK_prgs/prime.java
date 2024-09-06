@@ -11,16 +11,14 @@ public class prime {
 
         boolean isPrime = true;
 
-        if (num <= 1) {
-            isPrime = false;
-        } else {
-
-            for (int i = 2; i <= Math.sqrt(num); i++) {
-                if (num % i == 0) {
-                    isPrime = false;
-                    break;
-                }
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            } else {
+                isPrime = true;
             }
+
         }
 
         if (isPrime) {
@@ -28,6 +26,5 @@ public class prime {
         } else {
             System.out.println(num + " is not a prime number.");
         }
-
     }
 }
