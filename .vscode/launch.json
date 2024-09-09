@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "additionofarraynums",
+            "request": "launch",
+            "mainClass": "additionofarraynums",
+            "projectName": "JAVA_9b31f867"
+        },
+        {
+            "type": "java",
             "name": "CanVote",
             "request": "launch",
             "mainClass": "CanVote",
