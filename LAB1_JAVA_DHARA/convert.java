@@ -1,3 +1,4 @@
+//convert from meter to feet
 import java.util.*;
 public class convert{
     public static void main(String[] args){
