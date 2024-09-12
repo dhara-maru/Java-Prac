@@ -27,7 +27,7 @@ public class cricket {
                 } else if (input.equals("N")) {
                     extraRuns++;
                     System.out.println("No ball! 1 run added.");
-                    j--; // Do not count this ball
+                    j--; // Do not count 
                 } else if (input.equals("Wd")) {
                     extraRuns++;
                     System.out.println("Wide ball! 1 run added.");
