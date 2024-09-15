@@ -1,4 +1,4 @@
-
+//print second half string
 import java.util.*;
 
 class secondhalfstr {
