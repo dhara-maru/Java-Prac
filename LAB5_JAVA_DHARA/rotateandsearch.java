@@ -34,6 +34,12 @@ public class rotateandsearch {
 
         }
 
+        //printing new temp array
+        for (int i = 0; i < temp.length; i++) {
+            System.out.print(temp[i] + "\t");
+        }
+
+        System.out.println();
         boolean flag = true;
         int index = 0;
         for (int i = 0; i < temp.length; i++) {
