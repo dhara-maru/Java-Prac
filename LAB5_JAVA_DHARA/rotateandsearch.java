@@ -52,3 +52,4 @@ public class rotateandsearch {
     }
 
 }
+//also try doing this using function later.
