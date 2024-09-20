@@ -11,8 +11,13 @@ class overloadcls {
         System.out.println("a+b+c+d - " + (a + b + c + d));
     }
 
-    void add(int c) {
-        System.out.println("a+b+c - " + (a + b + c));
+    void add(double d) {
+        System.out.println("a+b+c - " + (a + b + d));
+    }
+
+    double add(double c, double d) {
+        double ans = a + b + c + d;
+        return ans;
     }
 }
 
@@ -24,6 +29,9 @@ public class methodoverloading {
         obj.add();
         obj.add(30);
         obj.add(40, 50);
+
+        double result = obj.add(30.50, 40.00);
+        System.out.println("a+b+c+d - " + result);
     }
 
 }
