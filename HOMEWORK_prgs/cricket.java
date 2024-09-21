@@ -1,55 +1,88 @@
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class cricket {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        Random random = new Random();
+
+        System.out.println("************************************************");
+        System.out.println("          Welcome to the Cricket Game!          ");
+        System.out.println("************************************************\n");
 
         System.out.print("Enter the number of overs: ");
         int overs = sc.nextInt();
+        int totalBalls = overs * 6; // Total balls in the game
+        int[] ballsInOver = new int[6]; // Array to track ball number within each over
+        int runs = 0, wickets = 0, balls = 0, currentBall = 0, currentOver = 1;
 
-        int totalRuns = 0;
-        int totalWickets = 0;
-        int totalBalls = 0;
-        int extraRuns = 0;  // For no-ball and wide-balls
+        System.out.println("\n--- Game Starts Now! ---\n");
 
-        for (int i = 1; i <= overs; i++) {
-            System.out.println("Over " + i + ": ");
-            int runsInOver = 0;
-            for (int j = 1; j <= 6; j++) {
-                System.out.print("Enter runs for ball " + j + " (W for wicket, N for no-ball, Wd for wide): ");
-                String input = sc.next();
-
-                if (input.equals("W")) {
-                    totalWickets++;
-                    System.out.println("Wicket!");
-                } else if (input.equals("N")) {
-                    extraRuns++;
-                    System.out.println("No ball! 1 run added.");
-                    j--; // Do not count 
-                } else if (input.equals("Wd")) {
-                    extraRuns++;
-                    System.out.println("Wide ball! 1 run added.");
-                    j--; // Do not count this ball
-                } else {
-                    // Manual conversion from String to int
-                    int runs = 0;
-                    for (int k = 0; k < input.length(); k++) {
-                        runs = runs * 10 + (input.charAt(k) - '0');
-                    }
-                    runsInOver += runs;
-                    totalRuns += runs;
-                }
+        while (balls < totalBalls && wickets < 10) {
+            if (currentBall == 6) {  // If 6 balls are completed in an over, reset for the next over
+                currentBall = 0;
+                currentOver++;
+                System.out.println("\n--- Over " + currentOver + " starts ---\n");
             }
-            System.out.println("Runs in this over: " + runsInOver);
+
+            ballsInOver[currentBall] = currentBall + 1;  // Ball number within the over
+            System.out.println("Over " + currentOver + " Ball " + ballsInOver[currentBall]);
+
+            System.out.print("Enter result of ball (run, wicket, no ball, wide, exit): ");
+            String ballResult = sc.next().toLowerCase();
+
+            // Exit game if user types "exit"
+            if (ballResult.equals("exit")) {
+                System.out.println("\n************************************************");
+                System.out.println("      Thank you for playing! Game Ended.         ");
+                System.out.println("************************************************");
+                break;
+            }
+
+            switch (ballResult) {
+                case "run":
+                    int run = random.nextInt(7); // random runs from 0 to 6
+                    runs += run;
+                    System.out.println("\nRuns scored on this ball: " + run);
+                    currentBall++;
+                    balls++;
+                    break;
+                case "wicket":
+                    wickets++;
+                    System.out.println("\nWicket! Total wickets: " + wickets);
+                    currentBall++;
+                    balls++;
+                    break;
+                case "noball":
+                    System.out.println("\nNo Ball! Free hit awarded.");
+                    runs++;
+                    // No increment for balls as it doesn't count as a legal ball
+                    break;
+                case "wide":
+                    System.out.println("\nWide ball! Extra run awarded.");
+                    runs++;
+                    // No increment for balls as it doesn't count as a legal ball
+                    break;
+                default:
+                    System.out.println("\nInvalid input. Please enter 'run', 'wicket', 'noball', 'wide', or 'exit'.");
+                    break;
+            }
+
+            System.out.println("------------------------------------------------");
+            System.out.println("Total Runs: " + runs + " | Total Wickets: " + wickets + " | Balls Bowled: " + balls + "/" + totalBalls);
+            System.out.println("------------------------------------------------\n");
         }
 
-        int avgRuns = (totalRuns + extraRuns) / (overs * 6);
+        // End message if the game ends by either reaching total balls or wickets
+        if (balls >= totalBalls || wickets >= 10) {
+            System.out.println("************************************************");
+            System.out.println("            Innings Ended. Final Score:          ");
+            System.out.println("               " + runs + "/" + wickets + " in " + overs + " overs");
+            System.out.println("************************************************");
+        }
 
-        System.out.println("Total Runs: " + totalRuns);
-        System.out.println("Total Wickets: " + totalWickets);
-        System.out.println("Extra Runs: " + extraRuns);
-        System.out.println("Average Runs per Ball: " + avgRuns);
+        sc.close();
     }
 }
