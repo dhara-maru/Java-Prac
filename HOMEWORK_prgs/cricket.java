@@ -14,9 +14,11 @@ public class cricket {
 
         System.out.print("Enter the number of overs: ");
         int overs = sc.nextInt();
+
         int totalBalls = overs * 6; // Total balls in the game
-        int[] ballsInOver = new int[6]; // Array to track ball number within each over
-        int runs = 0, wickets = 0, balls = 0, currentBall = 0, currentOver = 1;
+        int[] ballsInOver = new int[6]; // Array to track 6 balls in each over
+
+        int runs = 0, wickets = 0, balls = 0, currentBall = 0, currentOver = 1, noballs = 0, wideballs = 0;
 
         System.out.println("\n--- Game Starts Now! ---\n");
 
@@ -46,8 +48,8 @@ public class cricket {
                     int run = random.nextInt(7); // random runs from 0 to 6
                     runs += run;
                     System.out.println("\nRuns scored on this ball: " + run);
-                    currentBall++;
-                    balls++;
+                    currentBall++;  //within the over
+                    balls++; //within the game
                     break;
                 case "wicket":
                     wickets++;
@@ -56,11 +58,13 @@ public class cricket {
                     balls++;
                     break;
                 case "noball":
+                    noballs++;
                     System.out.println("\nNo Ball! Free hit awarded.");
                     runs++;
                     // No increment for balls as it doesn't count as a legal ball
                     break;
                 case "wide":
+                    wideballs++;
                     System.out.println("\nWide ball! Extra run awarded.");
                     runs++;
                     // No increment for balls as it doesn't count as a legal ball
@@ -79,8 +83,12 @@ public class cricket {
         if (balls >= totalBalls || wickets >= 10) {
             System.out.println("************************************************");
             System.out.println("            Innings Ended. Final Score:          ");
-            System.out.println("               " + runs + "/" + wickets + " in " + overs + " overs");
+            System.out.println("          " + runs + " runs /" + wickets + " wickets in " + overs + " overs");
             System.out.println("************************************************");
+            System.out.println(" TOTAL BALLS : " + balls);
+            System.out.println(" TOTAL NO BALLS : " + noballs);
+            System.out.println(" TOTAL WIDE BALLS  : " + wideballs);
+
         }
 
         sc.close();
