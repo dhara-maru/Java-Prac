@@ -30,6 +30,9 @@ class ac_overloading {
         Bank.Account acc1 = new Bank.Account();
         acc1.name = "Dhara Maru";
         acc1.displayname("DHARAAAA MARU");
+        // acc1.password="12345"; will throw an error bcoz password is PRIVATE.
+        acc1.setpassword("12345");
+        System.out.println(acc1.getpassword()); //is private but is accessible bcoz of getters & setters
 
     }
 }
