@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "thisstatic",
+            "request": "launch",
+            "mainClass": "thisstatic",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "additionofarraynums",
             "request": "launch",
             "mainClass": "additionofarraynums",

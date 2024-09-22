@@ -3,7 +3,12 @@
 
 class thisclass {
 
-    static int n1, n2;
+    static int n1 = 10, n2;
+
+    void printinfo() {
+        System.out.println(this.n1);
+
+    }
 
     void add(int n1, int n2) {
         this.n1 = n1;
@@ -17,7 +22,8 @@ class thisstatic {
 
     public static void main(String[] args) {
         thisclass obj = new thisclass();
-
+        thisclass obj2 = new thisclass();
+        obj.printinfo();
         obj.add(5, 10);
 
     }
