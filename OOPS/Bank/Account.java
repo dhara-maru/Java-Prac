@@ -1,4 +1,4 @@
-package Bank;
+package Bank; //packages & encapsulation
 
 public class Account {
 
