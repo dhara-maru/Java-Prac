@@ -29,6 +29,7 @@ class ac_overloading {
 
         Bank.Account acc1 = new Bank.Account();
         acc1.name = "Dhara Maru";
+        acc1.displayname("DHARAAAA MARU");
 
     }
 }
