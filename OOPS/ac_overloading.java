@@ -26,5 +26,9 @@ class ac_overloading {
         a1.printinfo(20);
         a1.printinfo("Dhara");
         a1.printinfo(a1.name, a1.age);
+
+        Bank.Account acc1 = new Bank.Account();
+        acc1.name = "Dhara Maru";
+
     }
 }
