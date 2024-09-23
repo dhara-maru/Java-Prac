@@ -1,3 +1,6 @@
+// L6 B3 : Create a class which ask the user to enter a sentence, and it should display count of
+// each vowel type in the sentence. The program should continue till user enters a word
+// “quit”. Display the total count of each vowel for all sentences.
 
 import java.util.Scanner;
 
@@ -14,7 +17,7 @@ class vowelc {
             iv = 0;
             o = 0;
             u = 0;
-            System.out.print("Enter quit to exit : ");
+            System.out.print("Enter String or Enter quit to exit : ");
             String str = sc.nextLine();
 
             if (str.equals("quit")) {
