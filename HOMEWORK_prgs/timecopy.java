@@ -11,18 +11,12 @@ class timecls {
         this.second = second;
     }
 
-    public timecls(timecls t1) {
-        this.hour = t1.hour;
-        this.minute = t1.minute;
-        this.second = t1.second;
-    }
-
-    public void addtime() {
+    public void addtime(timecls t2) {
         int newhour, newmin, newsec;
 
-        newhour = this.hour + this.hour;
-        newmin = this.minute + this.minute;
-        newsec = this.second + this.second;
+        newhour = this.hour + t2.hour;
+        newmin = this.minute + t2.minute;
+        newsec = this.second + t2.second;
 
         if (newsec >= 60) {
             newmin += newsec / 60;
@@ -50,10 +44,17 @@ public class timecopy {
         System.out.print("Enter second for time 1 : ");
         int sec1 = sc.nextInt();
 
-        timecls t1 = new timecls(hr1, min1, sec1);
-        timecls t2 = new timecls(t1);
+        System.out.print("Enter hour for time 2 : ");
+        int hr2 = sc.nextInt();
+        System.out.print("Enter minute for time 2 : ");
+        int min2 = sc.nextInt();
+        System.out.print("Enter second for time 2 : ");
+        int sec2 = sc.nextInt();
 
-        t1.addtime();
+        timecls t1 = new timecls(hr1, min1, sec1);
+        timecls t2 = new timecls(hr2, min2, sec2);
+
+        t1.addtime(t2);
 
     }
 }
