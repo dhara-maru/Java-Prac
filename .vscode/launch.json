@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "compleximaginary",
+            "request": "launch",
+            "mainClass": "compleximaginary",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "vowelCountUsingClass",
             "request": "launch",
             "mainClass": "vowelCountUsingClass",
