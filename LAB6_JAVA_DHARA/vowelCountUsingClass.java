@@ -1,52 +1,58 @@
 
 import java.util.Scanner;
 
-// Lab 6 B 4 : Create a class which ask the user to enter a sentence, and it should display count of
-// each vowel type in the sentence. The program should continue till user enters a word
-// “quit”. Display the total count of each vowel for all sentences.
 class vowelc {
 
-    String str;
+    int a, e, iv, o, u;
 
-    void getSentence() {
+    void getstring() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a Sentence : ");
-        str = sc.nextLine();
 
-        countVowels(str);
-    }
+        while (true) {
+            a = 0;
+            e = 0;
+            iv = 0;
+            o = 0;
+            u = 0;
+            System.out.print("Enter quit to exit : ");
+            String str = sc.nextLine();
 
-    public void countVowels(String str) {
-        int A = 0, E = 0, I = 0, O = 0, U = 0;
-        for (int i = 0; i < str.length(); i++) {
-            switch (str.charAt(i)) {
-                case 'A':
-                    A++;
-                    break;
-                case 'E':
-                    E++;
-                    break;
-                case 'I':
-                    I++;
-                    break;
-                case 'O':
-                    O++;
-                    break;
-                case 'U':
-                    U++;
-                    break;
-                default:
-                    System.out.println("There are no vowels in the sentence. ");
-                    break;
+            if (str.equals("quit")) {
+                break;
+            } else {
+
+                for (int i = 0; i < str.length(); i++) {
+                    switch (str.charAt(i)) {
+                        case 'a':
+                            a++;
+                            break;
+                        case 'e':
+                            e++;
+                            break;
+                        case 'i':
+                            iv++;
+                            break;
+                        case 'o':
+                            o++;
+                            break;
+                        case 'u':
+                            u++;
+                            break;
+                        // default:
+                        //     System.out.println("No vowel found!");
+                        //     break;
+
+                    }
+                }
             }
 
-            System.out.println("Vowels in the sentence are : ");
-            System.out.println("A : " + A);
-            System.out.println("E : " + E);
-            System.out.println("I : " + I);
-            System.out.println("O : " + O);
-            System.out.println("U : " + U);
-        }
+            System.out.println("a are : " + a);
+            System.out.println("e are : " + e);
+            System.out.println("i are : " + iv);
+            System.out.println("o are : " + o);
+            System.out.println("u are : " + u);
+        }//while loop
+
     }
 
 }
@@ -54,8 +60,9 @@ class vowelc {
 class vowelCountUsingClass {
 
     public static void main(String[] args) {
-        vowelc vc = new vowelc();
-        vc.getSentence();
+        vowelc v1 = new vowelc();
+        v1.getstring();
 
     }
+
 }
