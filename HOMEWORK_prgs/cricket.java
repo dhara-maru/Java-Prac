@@ -1,12 +1,11 @@
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class cricket {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Random random = new Random();
+        // Random random = new Random();
 
         System.out.println("************************************************");
         System.out.println("          Welcome to the Cricket Game!          ");
@@ -45,7 +44,8 @@ public class cricket {
 
             switch (ballResult) {
                 case "run":
-                    int run = random.nextInt(7); // random runs from 0 to 6
+
+                    int run = sc.nextInt();
                     runs += run;
                     System.out.println("\nRuns scored on this ball: " + run);
                     currentBall++;  //within the over
@@ -58,15 +58,23 @@ public class cricket {
                     balls++;
                     break;
                 case "noball":
+                    System.out.print("Enter runs -");
+                    int noballrun = sc.nextInt();
+                    runs += noballrun + 1;
                     noballs++;
                     System.out.println("\nNo Ball! Free hit awarded.");
-                    runs++;
+                    // currentBall++;
+                    // balls++;
                     // No increment for balls as it doesn't count as a legal ball
                     break;
                 case "wide":
-                    wideballs++;
+                    System.out.print("Enter runs -");
+                    int wideballrun = sc.nextInt();
+                    runs += wideballrun + 1;
                     System.out.println("\nWide ball! Extra run awarded.");
-                    runs++;
+                    wideballs++;
+                    // currentBall++;
+                    // balls++;
                     // No increment for balls as it doesn't count as a legal ball
                     break;
                 default:
@@ -91,6 +99,5 @@ public class cricket {
 
         }
 
-        sc.close();
     }
 }
