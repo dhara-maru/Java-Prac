@@ -4,7 +4,7 @@
  */
 interface animal2 {
 
-    void walk();
+    void walk();        //by default it's ABSTRACT & PUBLIC
     // // animal(){            //constructor is not allowed
 
     // }         
@@ -13,7 +13,13 @@ interface animal2 {
 
 }
 
-class lion implements animal2 {
+interface herbivore {        //multiple inheritance is done using interface
+
+    void eatswhat();
+
+}
+
+class lion implements animal2, herbivore {      //multiple inheritance
 
     public void walk() {
         System.out.println("walks on 4 legs");
@@ -21,6 +27,10 @@ class lion implements animal2 {
 
     public void eat() {     //both method must be defined.
         System.out.println("eats meat");
+    }
+
+    public void eatswhat() {
+        System.out.println("Eats only plants.");
     }
 }
 
