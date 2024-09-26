@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "nestedclassdemo",
+            "request": "launch",
+            "mainClass": "nestedclassdemo",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "arrayofobject",
             "request": "launch",
             "mainClass": "arrayofobject",
