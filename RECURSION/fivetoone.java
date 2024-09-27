@@ -3,7 +3,10 @@
 class fivetoone {
 
     static void mymethod(int par) {
-
+        if(par ==0){
+            return;
+        }
+        System.out.println(par);
         mymethod(par - 1);
 
     }
