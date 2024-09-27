@@ -78,12 +78,20 @@ class CricketGame {
                 balls++;
                 break;
             case "noball":
-                runs += run + 1;
-                noballs++;
+                if (run == 0 || run == 1 || run == 2 || run == 3 || run == 4 || run == 6) {
+                    runs += run;
+                    noballs++;
+                } else {
+                    System.out.println("Enter valid runs. (0/1/2/3/4/6)");
+                }
                 break;
             case "wide":
-                runs += run + 1;
-                wideballs++;
+                if (run == 0 || run == 1 || run == 2 || run == 3 || run == 4 || run == 6) {
+                    runs += run;
+                    wideballs++;
+                } else {
+                    System.out.println("Enter valid runs. (0/1/2/3/4/6)");
+                }
                 break;
         }
     }
