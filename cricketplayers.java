@@ -63,9 +63,13 @@ class CricketGame {
         Player currentPlayer = players[currentPlayerIndex];
         switch (ballResult) {
             case "run":
-                currentPlayer.scoreRuns(run);
-                runs += run;
-                balls++;
+                if (run == 0 || run == 1 || run == 2 || run == 3 || run == 4 || run == 6) {
+                    currentPlayer.scoreRuns(run);
+                    runs += run;
+                    balls++;
+                } else {
+                    System.out.println("Enter valid runs. (0/1/2/3/4/6)");
+                }
                 break;
             case "wicket":
                 currentPlayer.out();
