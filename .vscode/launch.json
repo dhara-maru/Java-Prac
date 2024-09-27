@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Cricket",
+            "request": "launch",
+            "mainClass": "Cricket",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
+            "name": "cricketplayers",
+            "request": "launch",
+            "mainClass": "cricketplayers",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "fivetoone",
             "request": "launch",
             "mainClass": "fivetoone",
