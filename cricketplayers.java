@@ -93,14 +93,17 @@ class CricketGame {
                     System.out.println("Enter valid runs. (0/1/2/3/4/6)");
                 }
                 break;
+            default:
+                System.out.println("Enter Valid Operation!!!");
         }
     }
 
     public void displayScore() {
-        System.out.println("\n--- Player-wise Scoreboard ---");
+        System.out.println("\n~~~~~~~~~~~~~ Player-Wise Scoreboard ~~~~~~~~~~~~~\n");
         for (Player player : players) {
             if (player != null) {
-                System.out.println(player.name + ": " + player.runs + " runs, Balls Faced: " + player.ballsFaced + (player.isOut ? " (Out)" : " (Not Out)"));
+                System.out.println(player.name + ": " + player.runs + " runs,\t\t Balls Faced: " + player.ballsFaced + (player.isOut ? " (Out)" : " (Not Out)"));
+                System.out.println("_________________________________________________________________");
             }
         }
         System.out.println("\nTotal Runs: " + runs + " | Total Wickets: " + wickets);
@@ -121,13 +124,14 @@ public class cricketplayers {
         int overs = sc.nextInt();
         System.out.print("Enter the number of players: ");
         int playerCount = sc.nextInt();
+        sc.nextLine();
 
         CricketGame game = new CricketGame(overs, playerCount);
 
         // Adding players
         for (int i = 0; i < playerCount; i++) {
             System.out.print("Enter player " + (i + 1) + " name: ");
-            String playerName = sc.next();
+            String playerName = sc.nextLine();
             game.addPlayer(i, playerName);
         }
 
