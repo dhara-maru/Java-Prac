@@ -3,7 +3,7 @@
 class fivetoone {
 
     static void mymethod(int par) {
-        if(par ==0){
+        if (par == 0) {
             return;
         }
         System.out.println(par);
@@ -12,8 +12,7 @@ class fivetoone {
     }
 
     public static void main(String[] args) {
-
-        System.out.println(mymethod(5));
+        mymethod(5);
 
         // for(int i=5; i>=1; i--){
         //     System.out.println(i+"\t");
