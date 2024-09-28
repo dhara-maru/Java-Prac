@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "XpowNtoLOGN",
+            "request": "launch",
+            "mainClass": "XpowNtoLOGN",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "sumofNnatural",
             "request": "launch",
             "mainClass": "sumofNnatural",
