@@ -1,3 +1,5 @@
+// Includes OOP : Classes, Objects, 'This' keyword
+// Using 1D array, String Methods.
 
 import java.util.Scanner;
 
