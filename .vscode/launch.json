@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "sumofNnatural",
+            "request": "launch",
+            "mainClass": "sumofNnatural",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "Cricket",
             "request": "launch",
             "mainClass": "Cricket",
