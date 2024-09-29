@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "prac3g",
+            "request": "launch",
+            "mainClass": "prac3g",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
+            "name": "range",
+            "request": "launch",
+            "mainClass": "range",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
+            "name": "palindrome",
+            "request": "launch",
+            "mainClass": "palindrome",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
+            "name": "area",
+            "request": "launch",
+            "mainClass": "prac.area",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
+            "name": "input",
+            "request": "launch",
+            "mainClass": "prac.input",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "XpowNtoLOGN",
             "request": "launch",
             "mainClass": "XpowNtoLOGN",
