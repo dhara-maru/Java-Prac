@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "box_aob",
+            "request": "launch",
+            "mainClass": "box_aob",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "arrayofobjstud",
             "request": "launch",
             "mainClass": "arrayofobjstud",
