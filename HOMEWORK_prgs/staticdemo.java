@@ -22,7 +22,9 @@ class staticcls {
         void display() {
             System.out.println("Inside static nested class.");
         }
+
     }
+
 }
 
 public class staticdemo {

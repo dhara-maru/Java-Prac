@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "stringbufferdemo",
+            "request": "launch",
+            "mainClass": "stringbufferdemo",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "box_aob",
             "request": "launch",
             "mainClass": "box_aob",
