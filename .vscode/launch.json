@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "palinstring",
+            "request": "launch",
+            "mainClass": "palinstring",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
+            "name": "fibonacci2",
+            "request": "launch",
+            "mainClass": "fibonacci2",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "StaticOverloading",
             "request": "launch",
             "mainClass": "StaticOverloading",
