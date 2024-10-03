@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "maxinarray",
+            "request": "launch",
+            "mainClass": "maxinarray",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "avguser",
             "request": "launch",
             "mainClass": "avguser",
