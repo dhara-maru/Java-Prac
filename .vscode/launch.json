@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "multilevel_inh",
+            "request": "launch",
+            "mainClass": "multilevel_inh",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
+            "name": "multiple_inh",
+            "request": "launch",
+            "mainClass": "multiple_inh",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
+            "name": "inheritance",
+            "request": "launch",
+            "mainClass": "inheritance",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
+            "name": "SPIinherit",
+            "request": "launch",
+            "mainClass": "LAB7_JAVA_dhara.SPIinherit",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "anagram",
             "request": "launch",
             "mainClass": "anagram",
