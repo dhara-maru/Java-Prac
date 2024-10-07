@@ -1,3 +1,8 @@
+//Lab 7 A 1 : Declare a class called Student having following data members:id_no,
+// no_of_subjects_registered, subject_code, subject_credits, grade_obtained and spi.
+// Define constructor and calculate_spi methods. Define main to instantiate an array for
+// objects of class student to process data of n students to be given as command line
+// arguments
 
 import java.util.Scanner;
 
