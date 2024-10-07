@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "superkeyword",
+            "request": "launch",
+            "mainClass": "superkeyword",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "multilevel_inh",
             "request": "launch",
             "mainClass": "multilevel_inh",
