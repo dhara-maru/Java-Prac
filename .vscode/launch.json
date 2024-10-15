@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "inputexe",
+            "request": "launch",
+            "mainClass": "inputexe",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "exceptiondemo",
             "request": "launch",
             "mainClass": "exceptiondemo",
