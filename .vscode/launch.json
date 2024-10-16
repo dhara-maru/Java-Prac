@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "exceptionInFinally",
+            "request": "launch",
+            "mainClass": "exceptionInFinally",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "shapedemo",
             "request": "launch",
             "mainClass": "LAB9_JAVA_DHARA.A5.shapedemo",
