@@ -3,6 +3,10 @@ public class stringbufferdemo {
 
     public static void main(String[] args) {
         StringBuffer s1 = new StringBuffer("stringbuffer demo");
+        String str1 = "Dhara Maru";
+        String str2 = "Hetvi Maru";
+
+        System.out.println(str1.compareTo(str2));
 
         s1.append(" is here");
         System.out.println(s1);

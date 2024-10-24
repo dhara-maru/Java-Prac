@@ -1,3 +1,4 @@
+// point inheritancce
 class MyPoint {
     double x;
     double y;
