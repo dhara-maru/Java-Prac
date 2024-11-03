@@ -1,5 +1,4 @@
 
-
 class my1 extends Thread {
     my1(String name) {
         super(name);
@@ -22,6 +21,7 @@ public class threadprio {
         t1.setPriority(Thread.MAX_PRIORITY);
         t5.setPriority(Thread.NORM_PRIORITY);
         t2.setPriority(Thread.MIN_PRIORITY);
+        t3.setPriority(Thread.MIN_PRIORITY);
         t1.start();
         t2.start();
         t3.start();
