@@ -9,6 +9,11 @@ class gm extends Thread {
 class welcome extends Thread {
     public void run() {
         while (true) {
+            try {
+                Thread.sleep(200);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
             System.out.println("welcome");
         }
     }
