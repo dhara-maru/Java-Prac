@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class arraylistdemo {
     public static void main(String[] args) {
@@ -41,6 +42,15 @@ public class arraylistdemo {
         System.out.println(l1.contains(7));
         System.out.println(l1.indexOf(20));
         System.out.println(l3.isEmpty()); // false
+
+        Iterator<Integer> it = l1.iterator();
+        while (it.hasNext()) {
+            System.out.println("Iterator : " + it.next());
+        }
+        Iterator<String> it2 = l3.iterator();
+        while (it2.hasNext()) {
+            System.out.println("Iterator : " + it2.next());
+        }
 
     }
 }
