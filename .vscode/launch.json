@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "occfile2",
+            "request": "launch",
+            "mainClass": "occfile2",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
+            "name": "occfile1",
+            "request": "launch",
+            "mainClass": "occfile1",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
+            "name": "countvowelfile1",
+            "request": "launch",
+            "mainClass": "countvowelfile1",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
+            "name": "copypastefile2",
+            "request": "launch",
+            "mainClass": "copypastefile2",
+            "projectName": "JAVA_21c698e4"
+        },
+        {
+            "type": "java",
             "name": "copypastefile1",
             "request": "launch",
             "mainClass": "copypastefile1",
