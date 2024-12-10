@@ -37,9 +37,10 @@ class producer extends Thread {
     }
 
     public void run() {
-        synchronized (p) {
-            p.product_put(10);
-        }
+        p.product_put(10);
+        // synchronized (p) {
+        // p.product_put(10);
+        // }
     }
 }
 
@@ -51,9 +52,10 @@ class consumer extends Thread {
     }
 
     public void run() {
-        synchronized (p) {
-            p.product_get();
-        }
+        p.product_get();
+        // synchronized (p) {
+        // p.product_get();
+        // }
     }
 }
 
